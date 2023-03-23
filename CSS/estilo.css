@@ -8,7 +8,7 @@ html{
     font-size: 62,5%;
 }
 header{
-    background: linear-gradient(to right, #FF4500, #6A5ACD);
+    background: linear-gradient(to bottom, #000, #6A5ACD);
     color: #fff;
     font-size: 1.5rem;
     text-align: center;
@@ -20,7 +20,7 @@ header{
 }
 @media (min-width: 300px) and (max-width: 840px){
     header{
-        background: linear-gradient(to right, #FF4500, #6A5ACD);
+        background: linear-gradient(to right, #000, #6A5ACD);
         color: #fff;
         font-size: 1.5rem;
         text-align: center;
@@ -58,6 +58,17 @@ a{
 /* < Fim dos Parametros do Cabecalho> */
 
 /* < Inicio dos Parametros do Corpo > */
+.container{
+    background-color: #fff;
+    width: 95%;
+    box-shadow: 2px 2px #fff;
+    margin: 0 auto;
+    max-width: 90%;
+    max-height: 90%;
+    min-width: 0;
+    min-height: 0;
+}
+
 .conteudo{
     font-size: 1rem;
     background-color: #f5f5f5;
@@ -70,7 +81,7 @@ a{
 
 .conteudo-corpo{
     font-size: 1rem;
-    background: linear-gradient(to right, #FF4500, #6A5ACD);
+    background: linear-gradient(to right, #000, #6A5ACD);
     padding: 1rem;
     text-align: justify;
     margin: 0 auto;
@@ -81,7 +92,7 @@ a{
 @media (min-width: 300px) and (max-width: 840px){
     .conteudo-corpo{
         font-size: 1rem;
-        background: linear-gradient(to right, #FF4500, #6A5ACD);
+        background: linear-gradient(to right, #000, #6A5ACD);
         padding: 1rem;
         text-align: justify;
         margin: 0 auto;
@@ -89,6 +100,29 @@ a{
         padding-top: 3rem;
         
     }
+}
+#grid-container{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 5px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+
+}
+.grid div{
+    background-color: #fff;
+    font-family: arial;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 1rem;
+
 }
 
 #grid-conteudo{
@@ -192,10 +226,25 @@ h2{
 
 /* < Fim dos Parametros de Layout > */
 
+/* < Inicio dos Parametros de Imagens> */
+
+.imagens-sociais{
+    width: 4%;
+    height: 30%;
+
+}
+.imagens-site{
+    border-radius: 10px 10px 10px 10px;
+    width: 70%;
+    height: 80%;
+}
+
+/* < Fim dos Parametros de Imagens> */
+
 /* < Inicio dos Parametros do Rodapé> */
 footer{
     font-family: arial;
-    background: linear-gradient(to right, #FF4500, #6A5ACD);
+    background: linear-gradient(to top, #000, #6A5ACD);
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -203,8 +252,21 @@ footer{
     color: #fff;
     border: solid #000;
 
-
+}
+@media (min-width: 300px) and (max-width: 800px){
+    footer{
+        font-family: arial;
+        background: linear-gradient(to top, #000, #6A5ACD);
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-shadow: 1px 1px 2px #000;
+        color: #fff;
+        border: solid #000;
+    
+    }
 
 }
 
-/* < Inicio dos Parametros do Rodapé> */
+/* < Fim dos Parametros do Rodapé> */
+
